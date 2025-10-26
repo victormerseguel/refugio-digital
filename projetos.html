@@ -5,68 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/assets/connection.svg" />
     <title>Refúgio Digital - Projetos</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="/">
-          <img src="../assets/connection.svg" alt="ícone de um globo" />
+          <img
+            src="./assets/connection.svg"
+            alt="Logotipo do Refúgio Digital"
+          />
           <h2>REFÚGIO DIGITAL</h2>
         </a>
-        <ul>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
           <li><a href="/">Início</a></li>
           <li><a href="/projetos.html">Projetos</a></li>
           <li><a href="/cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="projects">
       <h1>Projetos</h1>
-      <div>
-        <h2>Integração Cultural</h2>
-        <p>
-          O <strong>Projeto Integração Cultural</strong> tem como objetivo
-          promover eventos e cursos que aproximam diferentes culturas, criando
-          espaços de convivência, aprendizado e troca de experiências. As
-          inscrições para voluntariado estão abertas, e é possível contribuir
-          também com apoio financeiro diretamente pela plataforma.
-        </p>
-        <button type="button">Saiba Mais</button>
-      </div>
-      <div>
-        <h2>Alfabetização Digital</h2>
-        <p>
-          Já o <strong>Projeto Alfabetização Digital</strong> busca capacitar
-          refugiados e imigrantes no uso de tecnologias básicas, ampliando suas
-          oportunidades de inserção no mercado de trabalho e de participação
-          ativa na sociedade digital. Neste projeto, tanto o voluntariado quanto
-          as doações financeiras são bem-vindos e fundamentais para o seu
-          funcionamento.
-        </p>
-        <button type="button">Saiba Mais</button>
-      </div>
-      <div>
-        <h2>Apoio Jurídico e Social</h2>
-        <p>
-          Por fim, o <strong>Projeto Apoio Jurídico e Social</strong> oferece
-          orientação sobre direitos, cidadania e processos burocráticos,
-          auxiliando na regularização de documentos e no acesso a serviços
-          essenciais. Pessoas interessadas podem participar como voluntárias ou
-          contribuir financeiramente, fortalecendo o atendimento e ampliando o
-          impacto social dessa iniciativa.
-        </p>
-        <button type="button">Saiba Mais</button>
-      </div>
+      <section>
+        <div class="cultural-integration">
+          <img
+            src="./assets/refugio-digital-projeto1.webp"
+            alt="Projeto Integração Cultural - Conferência"
+          />
+          <h2>Integração Cultural</h2>
+          <p>
+            O <strong>Projeto Integração Cultural</strong> tem como objetivo
+            promover eventos e cursos que aproximam diferentes culturas, criando
+            espaços de convivência, aprendizado e troca de experiências. As
+            inscrições para voluntariado estão abertas, e é possível contribuir
+            também com apoio financeiro diretamente pela plataforma.
+          </p>
+          <button type="button" class="button-dark">Saiba Mais</button>
+        </div>
+        <div class="digital-literacy">
+          <img
+            src="./assets/refugio-digital-projeto2.webp"
+            alt="Projeto Alfabetização Digital"
+          />
+          <h2>Alfabetização Digital</h2>
+          <p>
+            Já o <strong>Projeto Alfabetização Digital</strong> busca capacitar
+            refugiados e imigrantes no uso de tecnologias básicas, ampliando
+            suas oportunidades de inserção no mercado de trabalho e de
+            participação ativa na sociedade digital. Neste projeto, tanto o
+            voluntariado quanto as doações financeiras são bem-vindos e
+            fundamentais para o seu funcionamento.
+          </p>
+          <button type="button" class="button-dark">Saiba Mais</button>
+        </div>
+        <div class="legal-support">
+          <img
+            src="./assets/refugio-digital-projeto3.webp"
+            alt="Projeto Apoio Jurídico e Social"
+          />
+          <h2>Apoio Jurídico e Social</h2>
+          <p>
+            Por fim, o <strong>Projeto Apoio Jurídico e Social</strong> oferece
+            orientação sobre direitos, cidadania e processos burocráticos,
+            auxiliando na regularização de documentos e no acesso a serviços
+            essenciais. Pessoas interessadas podem participar como voluntárias
+            ou contribuir financeiramente, fortalecendo o atendimento e
+            ampliando o impacto social dessa iniciativa.
+          </p>
+          <button type="button" class="button-dark">Saiba Mais</button>
+        </div>
+      </section>
     </main>
     <footer>
       <h3>Nossos Contatos</h3>
-      <div>
+      <div class="address">
         <p>Endereço</p>
-        <p>Rua das Flores, 123 – São Paulo/SP<br />CEP: 12345-678</p>
+        <p>
+          Rua das Flores, 123 – São Paulo/SP
+          <br />
+          CEP: 12345-678
+        </p>
       </div>
-      <div>
+      <div class="contact">
         <p>E-mail e telefone</p>
-        <p>contato@refugiodigital.com.br<br />+55 (11) 1234-5678</p>
+        <p>
+          contato@refugiodigital.com.br
+          <br />
+          +55 (11) 1234-5678
+        </p>
       </div>
     </footer>
   </body>

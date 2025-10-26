@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/assets/connection.svg" />
     <title>Refúgio Digital</title>
+    <meta
+      name="description"
+      content="Refúgio Digital — plataforma de apoio a imigrantes e refugiados, com cursos, voluntariado e doações."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="/">
-          <img src="./assets/connection.svg" alt="ícone de um globo" />
+          <img
+            src="./assets/connection.svg"
+            alt="Logotipo do Refúgio Digital"
+          />
           <h2>REFÚGIO DIGITAL</h2>
         </a>
-        <ul>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
           <li><a href="/">Início</a></li>
           <li><a href="/projetos.html">Projetos</a></li>
           <li><a href="/cadastro.html">Cadastro</a></li>
@@ -21,7 +37,7 @@
       </nav>
     </header>
     <main>
-      <div>
+      <section class="intro">
         <h1>Apoio a imigrantes e refugiados</h1>
         <p>
           O Refúgio Digital é uma plataforma dedicada a apoiar imigrantes e
@@ -29,10 +45,12 @@
           e facilitando doações para projetos sociais de integração.
         </p>
         <a href="/projetos.html">
-          <button type="button">Conheça nossos projetos</button>
+          <button type="button" class="button-dark">
+            Conheça nossos projetos
+          </button>
         </a>
-      </div>
-      <div>
+      </section>
+      <section class="about">
         <h2>Sobre a Plataforma</h2>
         <p>
           Nosso objetivo é criar uma rede de apoio digital, permitindo que
@@ -40,8 +58,8 @@
           e oportunidades de integração, mesmo em dispositivos antigos e
           conexões instáveis.
         </p>
-      </div>
-      <div>
+      </section>
+      <section class="mission">
         <h2>Missão, Visão e Valores</h2>
         <p>
           A missão do Refúgio Digital é promover a inclusão social e digital de
@@ -54,17 +72,25 @@
           acessibilidade e colaboração, garantindo que cada ação da plataforma
           reflita compromisso com a comunidade e respeito às diferenças.
         </p>
-      </div>
+      </section>
     </main>
     <footer>
       <h3>Nossos Contatos</h3>
-      <div>
+      <div class="address">
         <p>Endereço</p>
-        <p>Rua das Flores, 123 – São Paulo/SP<br />CEP: 12345-678</p>
+        <p>
+          Rua das Flores, 123 – São Paulo/SP
+          <br />
+          CEP: 12345-678
+        </p>
       </div>
-      <div>
+      <div class="contact">
         <p>E-mail e telefone</p>
-        <p>contato@refugiodigital.com.br<br />+55 (11) 1234-5678</p>
+        <p>
+          contato@refugiodigital.com.br
+          <br />
+          +55 (11) 1234-5678
+        </p>
       </div>
     </footer>
   </body>

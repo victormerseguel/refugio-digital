@@ -1,0 +1,146 @@
+@import url("./index.css");
+@import url("./cadastro.css");
+@import url("./projetos.css");
+@import url("./menu-hamburger.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+:root {
+  --primary: #315449;
+  --primary-light: #4e7265;
+  --primary-dark: rgb(30, 54, 47);
+  --secondary: #c5a572;
+  --secondary-light: #e7d1a6;
+  --secondary-dark: #8d753f;
+  --neutral-light: #f5f5f5;
+  --neutral-dark: #1e1e1e;
+  --white: #ffffff;
+  --error: #c62828;
+  --success: #2e7d32;
+
+  --shadow: 0px 0px 20px rgba(30, 54, 47, 0.402);
+  --shadow-hover: 0px 4px 30px rgba(30, 54, 47, 0.502);
+
+  --font-family: Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 3rem;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda a altura da janela */
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: var(--primary);
+}
+
+header nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav > a {
+  transition: opacity 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--primary-light);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+h1 {
+  color: var(--primary-dark);
+}
+
+.button-dark {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  border: none;
+  padding: 12px 24px;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.button-dark:hover {
+  background-color: var(--primary-light);
+}
+
+footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 40px 60px;
+  display: grid;
+  grid-template-areas:
+    "h3 h3"
+    "address contact";
+  gap: 20px;
+}
+
+.address p:nth-of-type(1),
+.contact p:nth-of-type(1) {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+footer h3 {
+  grid-area: h3;
+}
+footer .address {
+  grid-area: address;
+}
+footer .contact {
+  grid-area: contact;
+}

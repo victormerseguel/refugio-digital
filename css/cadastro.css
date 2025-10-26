@@ -1,0 +1,89 @@
+.cadastro {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background-color: var(--neutral-light);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.cadastro h1 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+  color: var(--primary);
+}
+
+.cadastro form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cadastro label {
+  font-size: var(--font-size-md);
+  color: var(--neutral-dark);
+}
+
+.cadastro input {
+  padding: 12px 16px;
+  border: 1px solid var(--primary-light);
+  border-radius: 4px;
+  font-size: var(--font-size-md);
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cadastro input:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 5px var(--primary-light);
+}
+
+.cadastro button {
+  margin-top: var(--space-2);
+  padding: 12px;
+  font-size: var(--font-size-md);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  transition: background-color 0.2s ease;
+}
+
+.cadastro button:hover {
+  background-color: var(--primary-light);
+}
+
+.cadastro .error {
+  color: var(--error);
+  font-size: var(--font-size-sm);
+}
+
+.cadastro .success {
+  color: var(--success);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+  .cadastro {
+    padding: 20px;
+    margin: 40px;
+  }
+
+  .cadastro h1 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .cadastro input {
+    font-size: var(--font-size-sm);
+  }
+
+  .cadastro button {
+    font-size: var(--font-size-sm);
+  }
+}

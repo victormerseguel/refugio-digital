@@ -1,0 +1,42 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-5);
+  background-image: url("../assets/refugio-digital-banner1.webp");
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 20px 60px;
+}
+
+.intro h1 {
+  font-size: var(--font-size-xxl);
+  padding-right: 40%;
+  color: var(--white);
+}
+
+.intro p {
+  font-size: var(--font-size-md);
+  line-height: var(--space-3);
+  padding-right: 20%;
+  max-width: 600px;
+}
+
+.about,
+.mission {
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  line-height: var(--space-4);
+  color: var(--neutral-dark);
+}
+
+.about {
+  margin-top: 20px;
+}
+.mission {
+  margin-bottom: 20px;
+}

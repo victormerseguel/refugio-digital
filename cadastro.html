@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/assets/connection.svg" />
     <title>Refúgio Digital - Cadastro</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="/">
-          <img src="../assets/connection.svg" alt="ícone de um globo" />
+          <img
+            src="./assets/connection.svg"
+            alt="Logotipo do Refúgio Digital"
+          />
           <h2>REFÚGIO DIGITAL</h2>
         </a>
-        <ul>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <ul class="nav-links">
           <li><a href="/">Início</a></li>
           <li><a href="/projetos.html">Projetos</a></li>
           <li><a href="/cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="cadastro">
       <h1>Cadastro</h1>
       <p>
         Preencha o formulário abaixo para se tornar parte da comunidade Refúgio
@@ -28,43 +40,72 @@
         informações e contribua com doações.
       </p>
       <form action="">
-        <input type="text" name="nome" placeholder="Nome completo" required />
-        <input type="email" name="email" placeholder="E-mail" required />
+        <label for="nome">Nome Completo</label>
+        <input
+          type="text"
+          name="nome"
+          placeholder="Digite seu nome completo"
+          required
+        />
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
+        <label for="cpf">CPF</label>
         <input
           type="text"
           name="cpf"
-          placeholder="CPF"
+          placeholder="Digite seu CPF"
           maxlength="14"
           pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
           title="Formato: 000.000.000-00"
           required
         />
+        <label for="telefone">Telefone</label>
         <input
           type="tel"
           name="telefone"
-          placeholder="Telefone"
+          placeholder="Digite seu telefone"
           maxlength="15"
           pattern="\(\d{2}\) \d{4,5}-\d{4}"
           title="Formato: (00) 00000-0000"
           required
         />
+        <label for="nascimento">Data de Nascimento</label>
         <input
           type="date"
           name="nascimento"
-          placeholder="Data de Nascimento"
+          placeholder="Digite sua data de nascimento"
           required
         />
-        <input type="text" name="endereco" placeholder="Endereço" required />
+        <label for="endereco">Endereço</label>
+        <input
+          type="text"
+          name="endereco"
+          placeholder="Digite seu endereço"
+          required
+        />
+        <label for="cep">CEP</label>
         <input
           type="text"
           name="cep"
-          placeholder="CEP"
+          placeholder="Digite seu CEP"
           maxlength="9"
           pattern="\d{5}-\d{3}"
           title="Formato: 00000-000"
           required
         />
-        <input type="text" name="cidade" placeholder="Cidade" required />
+        <label for="cidade">Cidade</label>
+        <input
+          type="text"
+          name="cidade"
+          placeholder="Digite sua cidade"
+          required
+        />
+        <label for="estado">Estado</label>
         <select name="estado" required>
           <option value="">Estado</option>
           <option value="AC">Acre</option>
@@ -96,17 +137,27 @@
           <option value="TO">Tocantins</option>
         </select>
         <button type="submit">Cadastrar</button>
+        <p class="error" id="error-msg"></p>
+        <p class="success" id="success-msg"></p>
       </form>
     </main>
     <footer>
       <h3>Nossos Contatos</h3>
-      <div>
+      <div class="address">
         <p>Endereço</p>
-        <p>Rua das Flores, 123 – São Paulo/SP<br />CEP: 12345-678</p>
+        <p>
+          Rua das Flores, 123 – São Paulo/SP
+          <br />
+          CEP: 12345-678
+        </p>
       </div>
-      <div>
+      <div class="contact">
         <p>E-mail e telefone</p>
-        <p>contato@refugiodigital.com.br<br />+55 (11) 1234-5678</p>
+        <p>
+          contato@refugiodigital.com.br
+          <br />
+          +55 (11) 1234-5678
+        </p>
       </div>
     </footer>
   </body>
