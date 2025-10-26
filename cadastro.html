@@ -20,7 +20,84 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Cadastro</h1>
+      <p>
+        Preencha o formulário abaixo para se tornar parte da comunidade Refúgio
+        Digital. Seu cadastro permite que você participe de projetos, receba
+        informações e contribua com doações.
+      </p>
+      <form action="">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input
+          type="text"
+          name="cpf"
+          placeholder="CPF"
+          maxlength="14"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+          title="Formato: 000.000.000-00"
+          required
+        />
+        <input
+          type="tel"
+          name="telefone"
+          placeholder="Telefone"
+          maxlength="15"
+          pattern="\(\d{2}\) \d{4,5}-\d{4}"
+          title="Formato: (00) 00000-0000"
+          required
+        />
+        <input
+          type="date"
+          name="nascimento"
+          placeholder="Data de Nascimento"
+          required
+        />
+        <input type="text" name="endereco" placeholder="Endereço" required />
+        <input
+          type="text"
+          name="cep"
+          placeholder="CEP"
+          maxlength="9"
+          pattern="\d{5}-\d{3}"
+          title="Formato: 00000-000"
+          required
+        />
+        <input type="text" name="cidade" placeholder="Cidade" required />
+        <select name="estado" required>
+          <option value="">Estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </main>
     <footer>
       <h3>Nossos Contatos</h3>
       <div>
