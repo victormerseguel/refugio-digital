@@ -39,24 +39,34 @@ Implementado de acordo com WCAG 2.1 Nível AA:
 
 ## 🗂️ Estrutura de Pastas
 
+## 🗂️ Estrutura de Pastas
+
+```
 refugio-digital/
-│ index.html
-| cadastro.html
-| projetos.ktml
-│
+├── index.html
+├── cadastro.html
+├── projetos.html
 ├── css/
-│ └── style.css
-│ └── cadastro.css
-│ └── index.css
-│ └── menu-hamburguer.css
+│ ├── style.css
+│ ├── cadastro.css
+│ ├── index.css
+│ ├── menu-hamburguer.css
 │ └── projetos.css
-│
 ├── js/
 │ ├── spa.js
-│ └── form-validation.js
+│ ├── form-validation.js
 │ └── templates.js
-│
 └── assets/
+```
+
+---
+
+## 🗃️ Versionamento e GitHub
+
+- Estratégia de branching: **GitFlow**
+- Commits semânticos: `feat`, `fix`, `docs`, `chore`, `refactor`
+- Releases criadas com versionamento semântico (ex.: v1.0.0)
+- Pull Requests documentados e issues organizadas
 
 ---
 
