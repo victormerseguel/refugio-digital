@@ -1,7 +1,7 @@
 const projectCards = [
   {
     img: {
-      src: "./assets/refugio-digital-projeto1.webp",
+      src: "../assets/refugio-digital-projeto1.webp",
       alt: "Projeto Integração Cultural - Conferência",
     },
     title: "Integração Cultural",
@@ -9,7 +9,7 @@ const projectCards = [
   },
   {
     img: {
-      src: "./assets/refugio-digital-projeto2.webp",
+      src: "../assets/refugio-digital-projeto2.webp",
       alt: "Projeto Alfabetização Digital",
     },
     title: "Alfabetização Digital",
@@ -17,7 +17,7 @@ const projectCards = [
   },
   {
     img: {
-      src: "./assets/refugio-digital-projeto3.webp",
+      src: "../assets/refugio-digital-projeto3.webp",
       alt: "Projeto Apoio Jurídico e Social",
     },
     title: "Apoio Jurídico e Social",
