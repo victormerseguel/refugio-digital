@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.projects section div {
+.projects__card {
   background-color: var(--neutral-light);
   padding-bottom: var(--space-3);
   border-radius: 8px;
@@ -30,7 +30,7 @@
   max-width: 400px;
 }
 
-.projects section div img {
+.projects__card img {
   width: 100%;
   height: 300px;
   object-fit: cover;
