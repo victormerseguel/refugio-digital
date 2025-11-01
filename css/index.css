@@ -1,4 +1,4 @@
-.intro {
+.index .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,21 +11,21 @@
   padding: 20px 60px;
 }
 
-.intro h1 {
+.index .intro h1 {
   font-size: var(--font-size-xxl);
   padding-right: 40%;
   color: var(--white);
 }
 
-.intro p {
+.index .intro p {
   font-size: var(--font-size-md);
   line-height: var(--space-3);
   padding-right: 20%;
   max-width: 600px;
 }
 
-.about,
-.mission {
+.index .about,
+.index .mission {
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
@@ -34,9 +34,9 @@
   color: var(--neutral-dark);
 }
 
-.about {
+.index .about {
   margin-top: 20px;
 }
-.mission {
+.index .mission {
   margin-bottom: 20px;
 }
